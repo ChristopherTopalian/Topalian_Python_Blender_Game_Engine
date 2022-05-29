@@ -59,7 +59,7 @@ if (wkey and not controlKey):
 if (skey and not controlKey):
     obj.applyMovement([0, -mainSpeed, 0], 1)
 
-# A to move ROTATE LEFT
+# A to ROTATE LEFT
 if (akey and not controlKey):
     obj.applyRotation([0, 0, rotationSpeed], 1)
 
