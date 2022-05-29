@@ -78,3 +78,11 @@ if (shiftKey and wKey):
 # Shift + S to Boost Speed BACKWARDS
 if (shiftKey and sKey):
     obj.applyMovement([0, -boostSpeed, 0], 1)
+
+# SHIFT + CONTROL + A to Boost Speed SIDE STEP LEFT
+if (shiftKey and controlKey and aKey):
+    obj.applyMovement([-boostSpeed, 0, 0], 1)
+
+# SHIFT + CONTROL + D to Boost Speed SIDE STEP RIGHT
+if (shiftKey and controlKey and dKey):
+    obj.applyMovement([boostSpeed, 0, 0], 1)
