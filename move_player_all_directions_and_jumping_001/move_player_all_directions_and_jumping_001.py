@@ -4,6 +4,7 @@
 # move_player_all_directions_and_jumping_001.py
 # WASD to move
 # Shift to boost speed
+# Control to Side Step
 # Spacebar to jump
 
 # this script requires these logic bricks:
