@@ -7,6 +7,7 @@ Instructions:
 3. Open the Blender Game Engine Editor
 
 Open the Text Editor in the Blender Game Engine to edit scripts.
+
 Open the Logic Bricks window to edit the logic in conjunction with the scripts.
 
 How to Start Game:
