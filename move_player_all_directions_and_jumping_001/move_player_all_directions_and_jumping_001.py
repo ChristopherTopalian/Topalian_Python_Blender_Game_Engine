@@ -43,14 +43,6 @@ keyboardEvent[bge.events.RIGHTSHIFTKEY]
 controlKey = keyboardEvent[bge.events.LEFTCTRLKEY] or \
 keyboardEvent[bge.events.RIGHTCTRLKEY]
 
-# CONTROL + A to SIDE STEP LEFT
-if (controlKey and aKey):
-    obj.applyMovement([-mainSpeed, 0, 0], 1)
-
-# CONTROL + D to SIDE STEP RIGHT
-if (controlKey and dKey):
-    obj.applyMovement([mainSpeed, 0, 0], 1)
-
 # W to move FORWARD
 if (wKey and not controlKey):
     obj.applyMovement([0, mainSpeed, 0], 1)
@@ -67,10 +59,6 @@ if (aKey and not controlKey):
 if (dKey and not controlKey):
     obj.applyRotation([0, 0, -rotationSpeed], 1)
 
-# Spacebar to JUMP
-if (spaceKey):
-    obj.applyMovement([0, 0, jumpForce], 1)
-
 # Shift + W to Boost Speed FORWARDS
 if (shiftKey and wKey):
     obj.applyMovement([0, boostSpeed, 0], 1)
@@ -79,6 +67,14 @@ if (shiftKey and wKey):
 if (shiftKey and sKey):
     obj.applyMovement([0, -boostSpeed, 0], 1)
 
+# CONTROL + A to SIDE STEP LEFT
+if (controlKey and aKey):
+    obj.applyMovement([-mainSpeed, 0, 0], 1)
+
+# CONTROL + D to SIDE STEP RIGHT
+if (controlKey and dKey):
+    obj.applyMovement([mainSpeed, 0, 0], 1)
+
 # SHIFT + CONTROL + A to Boost Speed SIDE STEP LEFT
 if (shiftKey and controlKey and aKey):
     obj.applyMovement([-boostSpeed, 0, 0], 1)
@@ -86,3 +82,7 @@ if (shiftKey and controlKey and aKey):
 # SHIFT + CONTROL + D to Boost Speed SIDE STEP RIGHT
 if (shiftKey and controlKey and dKey):
     obj.applyMovement([boostSpeed, 0, 0], 1)
+
+# Spacebar to JUMP
+if (spaceKey):
+    obj.applyMovement([0, 0, jumpForce], 1)
