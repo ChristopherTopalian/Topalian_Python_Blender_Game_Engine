@@ -68,7 +68,7 @@ if (dkey and not controlKey):
     obj.applyRotation([0, 0, -rotationSpeed], 1)
 
 # Spacebar to JUMP
-if (spacekey and not controlKey):
+if (spacekey):
     obj.applyMovement([0, 0, jumpForce], 1)
 
 # Shift + W to Boost Speed FORWARDS
