@@ -8,3 +8,9 @@ Instructions:
 
 Open the Text Editor in the Blender Game Engine to edit scripts.
 Open the Logic Bricks window to edit the logic in conjunction with the scripts.
+
+How to Start Game:
+1. Open the Blender File
+2. Put Mouse Arrow in the 3d Window
+3. Press the letter P on the keyboard
+4. To end game, press ESC button on the keyboard
