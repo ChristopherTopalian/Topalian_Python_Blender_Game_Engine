@@ -30,51 +30,51 @@ obj = controller.owner
 kb = bge.logic.keyboard
 keyboardEvent = kb.events
 
-wkey = keyboardEvent[bge.events.WKEY]
-skey = keyboardEvent[bge.events.SKEY]
-akey = keyboardEvent[bge.events.AKEY]
-dkey = keyboardEvent[bge.events.DKEY]
+wKey = keyboardEvent[bge.events.WKEY]
+sKey = keyboardEvent[bge.events.SKEY]
+aKey = keyboardEvent[bge.events.AKEY]
+dKey = keyboardEvent[bge.events.DKEY]
 
-spacekey = keyboardEvent[bge.events.SPACEKEY]
+spaceKey = keyboardEvent[bge.events.SPACEKEY]
 
-shiftkey = keyboardEvent[bge.events.LEFTSHIFTKEY] or \
+shiftKey = keyboardEvent[bge.events.LEFTSHIFTKEY] or \
 keyboardEvent[bge.events.RIGHTSHIFTKEY]
 
 controlKey = keyboardEvent[bge.events.LEFTCTRLKEY] or \
 keyboardEvent[bge.events.RIGHTCTRLKEY]
 
 # CONTROL + A to SIDE STEP LEFT
-if (controlKey and akey):
+if (controlKey and aKey):
     obj.applyMovement([-mainSpeed, 0, 0], 1)
 
 # CONTROL + D to SIDE STEP RIGHT
-if (controlKey and dkey):
+if (controlKey and dKey):
     obj.applyMovement([mainSpeed, 0, 0], 1)
 
 # W to move FORWARD
-if (wkey and not controlKey):
+if (wKey and not controlKey):
     obj.applyMovement([0, mainSpeed, 0], 1)
 
 # S to move BACKWARDS
-if (skey and not controlKey):
+if (sKey and not controlKey):
     obj.applyMovement([0, -mainSpeed, 0], 1)
 
 # A to ROTATE LEFT
-if (akey and not controlKey):
+if (aKey and not controlKey):
     obj.applyRotation([0, 0, rotationSpeed], 1)
 
 # D to ROTATE RIGHT
-if (dkey and not controlKey):
+if (dKey and not controlKey):
     obj.applyRotation([0, 0, -rotationSpeed], 1)
 
 # Spacebar to JUMP
-if (spacekey):
+if (spaceKey):
     obj.applyMovement([0, 0, jumpForce], 1)
 
 # Shift + W to Boost Speed FORWARDS
-if (shiftkey and wkey):
+if (shiftKey and wKey):
     obj.applyMovement([0, boostSpeed, 0], 1)
 
 # Shift + S to Boost Speed BACKWARDS
-if (shiftkey and skey):
+if (shiftKey and sKey):
     obj.applyMovement([0, -boostSpeed, 0], 1)
