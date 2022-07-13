@@ -15,3 +15,9 @@ How to Start Game:
 2. Put Mouse Arrow in the 3d Window
 3. Press the letter P on the keyboard
 4. To end game, press ESC button on the keyboard
+
+TESTING EMBEDDING JS
+<iframe
+  src="https://jsfiddle.net/e1ga0fpm/
+  style="width:100%; height:300px;"
+></iframe>
